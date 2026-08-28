@@ -63,10 +63,13 @@ The overall system will eventually look like:
                       EMBEDDINGS
                            |
                            v
-                     VECTOR DB
+                     VECTOR DB(pg vector)
                            |
                            v
                  HYBRID RETRIEVAL
+                           |
+                           v
+                    OLLAMA + (TOOL/OUTPUT SELECTOR(ReAct based) -> DIFFERENT DB'S WITH DIFFERENT SURFACE (LIKE AMAZON, FLIPKART , MYNTRA))
                            |
                            v
                   AGENTIC COMMERCE
